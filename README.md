@@ -1,112 +1,76 @@
-# 🌸 Portfolio Cá Nhân - Trần Thị Quỳnh Như
-### Bài Kiểm Tra Giữa Kỳ Môn Thiết Kế Web • Trường Đại Học Lạc Hồng (LHU)
+# 🌸 Portfolio cá nhân – Trần Thị Quỳnh Như
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-ff69b4?style=for-the-badge&logo=github)](https://quynhnhu27.github.io/Nhu_TranThiQuynh_125000162/)
-[![HTML5](https://img.shields.io/badge/HTML5-Semantic%20No%20Div-e34f26?style=for-the-badge&logo=html5&logoColor=white)](#-tiêu-chuẩn-kỹ-thuật)
-[![CSS3](https://img.shields.io/badge/CSS3-Pastel%20Variables-1572b6?style=for-the-badge&logo=css3&logoColor=white)](#-tiêu-chuẩn-kỹ-thuật)
-[![Font](https://img.shields.io/badge/Font-Roboto-9333ea?style=for-the-badge)](#-tiêu-chuẩn-kỹ-thuật)
+**Bài kiểm tra giữa kỳ môn Thiết kế Web · Khoa Công nghệ Thông tin – Trường Đại học Lạc Hồng**
 
----
+Chào mọi người! Mình là **Trần Thị Quỳnh Như (MSSV 125000162)**. Đây là website Portfolio mình thực hiện để giới thiệu bản thân, những kỹ năng đang học và các dự án trong quá trình học CNTT.
 
-## 👩‍🎓 Thông Tin Sinh Viên
-- **Họ và tên:** Trần Thị Quỳnh Như
-- **Mã số sinh viên (MSSV):** 125000162
-- **Đơn vị:** Khoa Công nghệ Thông tin - Trường Đại học Lạc Hồng (LHU)
-- **Nơi ở & học tập:** TP. Biên Hòa, Tỉnh Đồng Nai
-- **Email sinh viên:** [125000162@lachong.edu.vn](mailto:125000162@lachong.edu.vn)
-- **Tài khoản GitHub:** [@QuynhNhu27](https://github.com/QuynhNhu27)
-- **Định hướng học tập:** Lập trình Frontend
-- **Ngoại ngữ đang học:** Tiếng Anh & Tiếng Nhật
+Mình chọn phong cách hồng pastel nhẹ nhàng, bố cục thoáng và dễ đọc. Với bài này, mình tập trung làm chủ **Semantic HTML5**, **CSS Variables**, **Grid/Flexbox** và các hiệu ứng không cần JavaScript.
 
----
+🌐 **[Xem website GitHub Pages](https://quynhnhu27.github.io/Nhu_TranThiQuynh_125000162/)**  
+📁 **[Xem Repository](https://github.com/QuynhNhu27/Nhu_TranThiQuynh_125000162)**
 
-## 🌐 Đường Dẫn Dự Án
-- **Website trực tiếp (GitHub Pages):** [https://quynhnhu27.github.io/Nhu_TranThiQuynh_125000162/](https://quynhnhu27.github.io/Nhu_TranThiQuynh_125000162/)
-- **Kho lưu trữ GitHub (Repository):** [https://github.com/QuynhNhu27/Nhu_TranThiQuynh_125000162](https://github.com/QuynhNhu27/Nhu_TranThiQuynh_125000162)
+## ✨ Nội dung website
 
----
+| Mục | Nội dung |
+| --- | --- |
+| 🏡 Trang chủ | Lời chào, chân dung, định hướng Frontend |
+| 🌷 Giới thiệu | Thông tin học tập và mục tiêu |
+| 💻 Kỹ năng | Những công nghệ và kiến thức mình đang rèn luyện |
+| 📁 Dự án | Các bài tập và Repository học tập |
+| 🌱 Hành trình | Các dấu mốc trong quá trình học CNTT |
+| 💌 Liên hệ | Liên kết mở ứng dụng email để liên hệ |
 
-## 📂 Cấu Trúc Thư Mục Repository
+## 🛠️ Công nghệ
+
+- **HTML5:** Sử dụng các thẻ `header`, `nav`, `main`, `section`, `article`, `footer` để tổ chức nội dung.
+- **CSS Variables:** Quản lý màu sắc, font chữ, khoảng cách và hiệu ứng.
+- **Flexbox & CSS Grid:** Căn chỉnh giao diện trên điện thoại, máy tính bảng và máy tính.
+- **Animate.css:** Hiệu ứng tiêu đề và nút CTA.
+- **CSS Animation:** Hover, hiệu ứng gõ chữ, chuyển động ảnh và Scroll-driven Animations sử dụng `animation-timeline: view()` trên trình duyệt hỗ trợ.
+- **HTML/CSS thuần:** Không nhúng JavaScript hay dùng file `.js`. Menu điện thoại dựa trên checkbox; nút liên hệ mở ứng dụng email.
+
+**Về AOS:** Đề gốc yêu cầu AOS, nhưng giảng viên yêu cầu không dùng JavaScript. Vì AOS chính thức cần JavaScript, bản này thay thế hiệu ứng cuộn bằng CSS Scroll-driven Animations. Đây là **giải pháp tương đương về hiệu ứng**, không phải AOS gốc.
+
+## 📂 Cấu trúc Repository
 
 ```text
 Nhu_TranThiQuynh_125000162/
-├── index.html           # Cấu trúc 100% Semantic HTML5 (Tuyệt đối không dùng thẻ <div>)
-├── style.css            # Hệ thống CSS Variables pastel, Responsive Grid/Flexbox, tính năng pure CSS
-├── README.md            # Tài liệu tổng quan giới thiệu dự án và hướng dẫn sử dụng
-├── PROMPT_LOG.md        # Nhật ký Prompt chi tiết và tài liệu kiến trúc kỹ thuật
-└── assets/              # Thư mục hình ảnh & mockup đồ họa chuẩn vector SVG
-    ├── avatar.svg       # Hình minh họa Chibi sinh viên CNTT Quỳnh Như
-    ├── favicon.svg      # Icon monogram "QN" pastel
-    ├── project-portfolio.svg # Mockup Dự án Portfolio cá nhân
-    ├── project-tkweb.svg     # Mockup Dự án TKWeb
-    └── project-gioithieu.svg # Mockup Dự án GioiThieuu
+├── index.html
+├── style.css
+├── README.md
+├── PROMPT_LOG.md
+├── avatar.jpg
+├── avatar.svg
+├── favicon.svg
+├── project-portfolio.svg
+├── project-tkweb.svg
+└── project-gioithieu.svg
 ```
 
----
+Ảnh chân dung trong phiên bản website hiện tại được nhúng trực tiếp trong HTML để tránh lỗi đường dẫn khi triển khai GitHub Pages. Các ảnh SVG được đặt cùng cấp với `index.html`.
 
-## 🌟 Điểm Nổi Bật & Tiêu Chuẩn Kỹ Thuật
+## 🚀 Cách xem và triển khai
 
-### 1. Chuẩn Semantic HTML5 Tuyệt Đối (Không Thẻ `<div>`)
-- Toàn bộ trang web **hoàn toàn không sử dụng thẻ `<div>`**.
-- Thay thế 100% bằng các thẻ chuẩn ngữ nghĩa HTML5: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<figure>`, `<figcaption>`, `<dl>`, `<dt>`, `<dd>`, `<ol>`, `<ul>`, `<li>`, `<p>`, `<span>`, `<form>`, `<fieldset>`, `<legend>`, `<label>`, `<input>`, `<textarea>`, `<button>`.
-- Thẻ `<nav>` chỉ dùng cho menu điều hướng chính, không lạm dụng cho nhóm nút bấm. Không dùng `<aside>` cho nội dung chính.
+1. Tải Repository về máy, giữ nguyên các file và mở `index.html` bằng Chrome hoặc Edge.
+2. Trên GitHub, vào **Settings → Pages**.
+3. Chọn **Deploy from a branch → main → /(root)** và lưu.
+4. Mở link GitHub Pages ở đầu README để kiểm tra trang đã được triển khai.
 
-### 2. Thiết Kế Pastel Nữ Tính & CSS Variables
-- **Bảng màu:** Hồng phấn (`#fbcfe8`), tím lavender (`#e9d5ff`), cam đào (`#fed7aa`) trên nền kem hồng (`#fff8f9`), tạo cảm giác mềm mại, ngọt ngào và chỉn chu.
-- **Font chữ:** Duy nhất font chữ **Roboto** từ Google Fonts, hỗ trợ hiển thị tiếng Việt hoàn hảo, không bị đứt gãy hay cắt dấu thanh.
-- **Màu tiêu đề thống nhất:** Sử dụng một màu mận tím đậm (`#441c30`) cho toàn bộ tiêu đề, đảm bảo độ tương phản cao đạt chuẩn WCAG.
+Website là sản phẩm tĩnh, không dùng backend, không có chức năng lưu hay gửi biểu mẫu trực tiếp. Hiệu ứng cuộn CSS phụ thuộc vào khả năng hỗ trợ của trình duyệt; các nội dung vẫn hiển thị bình thường nếu tính năng chưa được hỗ trợ.
 
-### 3. Bố Cục Đồng Đều & Responsive Đa Thiết Bị
-- Cả 6 mục (*Trang chủ, Giới thiệu, Kỹ năng, Dự án, Hành trình, Liên hệ*) dùng chung một khung độ rộng tối đa chuẩn **1160px**, khoảng cách trên dưới đồng đều `84px 0`.
-- Phần đầu mỗi mục đồng dạng: nhãn nhỏ + tiêu đề + mô tả căn giữa.
-- Toàn bộ lưới thẻ bố trí bằng **CSS Grid** đối xứng, thẻ có cùng chiều cao, bo góc mềm `20px` và đổ bóng mượt mà `0.3s`.
-  - **Kỹ năng:** 6 thẻ (3 cột x 2 hàng trên Desktop, 2 cột Tablet, 1 cột Mobile).
-  - **Dự án:** 3 thẻ (3 cột Desktop, 2 cột Tablet, 1 cột Mobile).
+## 👩‍🎓 Thông tin sinh viên
 
-### 4. Ràng Buộc JavaScript Khắt Khe (Chỉ Đúng 1 Dòng Code)
-- **Tuyệt đối không có file JavaScript riêng.**
-- Chỉ có đúng **MỘT dòng script duy nhất** ở cuối `index.html` để khởi tạo thư viện AOS:
-  ```html
-  <script>AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 100 });</script>
-  ```
-- **5 Tính năng tương tác thực hiện 100% bằng CSS/HTML thuần:**
-  1. *Hiệu ứng gõ chữ (Typewriter):* CSS `@keyframes typewriterLoop` kết hợp hàm `steps()`.
-  2. *Bộ đếm số thống kê (Counter):* Modern CSS Houdini `@property` với `counter-reset` và `counter()`.
-  3. *Menu điện thoại (Mobile Menu):* Checkbox Hack thuần CSS (`#nav-toggle:checked ~ .site-nav`).
-  4. *Kiểm tra form (Form Validation):* CSS `:user-invalid` và `:user-valid` tự động báo lỗi trực quan.
-  5. *Nút lên đầu trang (Back to top):* Thẻ neo `<a href="#top">` với `html { scroll-behavior: smooth; }`.
+| Thông tin | Chi tiết |
+| --- | --- |
+| Họ và tên | Trần Thị Quỳnh Như |
+| MSSV | 125000162 |
+| Trường | Đại học Lạc Hồng |
+| Khoa | Công nghệ Thông tin |
+| Học phần | Thiết kế Web |
+| GitHub | [@QuynhNhu27](https://github.com/QuynhNhu27) |
+
+Nhật ký Prompt được lưu trong [PROMPT_LOG.md](PROMPT_LOG.md).
 
 ---
 
-## 💼 Danh Sách Dự Án Thực Tế Trên GitHub
-Website chỉ trình bày 3 dự án thực tế trên tài khoản GitHub [@QuynhNhu27](https://github.com/QuynhNhu27):
-
-1. **[Portfolio Cá Nhân (Repo Nhu_TranThiQuynh_125000162)](https://github.com/QuynhNhu27/Nhu_TranThiQuynh_125000162):** Website hồ sơ cá nhân phục vụ bài kiểm tra giữa kỳ môn Thiết kế Web tại Trường Đại học Lạc Hồng, triển khai qua GitHub Pages.
-2. **[Dự Án TKWeb (Repo TKWeb)](https://github.com/QuynhNhu27/TKWeb):** Kho lưu trữ bài tập và các bài thực hành giao diện môn Thiết kế Web tại Khoa CNTT Trường Đại học Lạc Hồng.
-3. **[Dự Án GioiThieuu (Repo GioiThieuu)](https://github.com/QuynhNhu27/GioiThieuu):** Kho lưu trữ trang web giới thiệu cá nhân và thực hành cấu trúc web cơ bản trên GitHub.
-
----
-
-## 🚀 Hướng Dẫn Xem Và Xuất Bản Lên GitHub Pages
-
-### Cách 1: Xem trực tiếp trên máy tính
-1. Tải hoặc clone repository về máy tính.
-2. Nhấp đúp chuột vào file `index.html` để mở trực tiếp trên bất kỳ trình duyệt hiện đại nào (Chrome, Edge, Firefox, Safari).
-
-### Cách 2: Triển khai qua GitHub Pages
-1. Đẩy mã nguồn lên kho lưu trữ GitHub của bạn:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: Hoan thien Portfolio ca nhan Tran Thi Quynh Nhu 125000162"
-   git branch -M main
-   git remote add origin https://github.com/QuynhNhu27/Nhu_TranThiQuynh_125000162.git
-   git push -u origin main
-   ```
-2. Trên GitHub, vào mục **Settings** ➔ chọn tab **Pages** ở cột trái.
-3. Tại phần **Build and deployment**, mục **Branch** chọn `main` và thư mục `/ (root)`, nhấn **Save**.
-4. Chờ 1 - 2 phút, website sẽ hoạt động trực tiếp tại địa chỉ:
-   `https://quynhnhu27.github.io/Nhu_TranThiQuynh_125000162/`
-
----
-*© 2026 Trần Thị Quỳnh Như - MSSV: 125000162 - Khoa Công nghệ Thông tin, Trường Đại học Lạc Hồng.*
+*🌸 Cảm ơn thầy cô và mọi người đã dành thời gian xem bài làm của mình!*
