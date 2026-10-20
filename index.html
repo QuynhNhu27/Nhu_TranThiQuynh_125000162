@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO & Project Metadata -->
+  <title>Trần Thị Quỳnh Như | Portfolio Cá Nhân - Sinh Viên CNTT ĐH Lạc Hồng</title>
+  <meta name="description" content="Portfolio cá nhân của sinh viên Trần Thị Quỳnh Như - MSSV 125000162, Khoa CNTT Trường Đại học Lạc Hồng. Bài kiểm tra giữa kỳ môn Thiết kế Web, triển khai qua GitHub Pages.">
+  <meta name="author" content="Trần Thị Quỳnh Như">
+  <meta name="keywords" content="Trần Thị Quỳnh Như, 125000162, Đại học Lạc Hồng, LHU, Thiết kế Web, Frontend, QuynhNhu27">
+
+  <!-- Favicon Monogram QN -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Duy Nhất Một Font: Roboto Hỗ Trợ Đầy Đủ Tiếng Việt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Thư Viện Animate.css (Chỉ Dùng Cho Tiêu Đề Hero Và Nút CTA) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Thư Viện AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Stylesheet Tùy Biến (100% CSS Thuần, CSS Variables, Responsive Grid/Flexbox) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- =========================================================================
+       HEADER: LOGO + MENU ĐIỀU HƯỚNG BẰNG CHECKBOX HACK (ZERO JAVASCRIPT)
+       ========================================================================= -->
+  <header class="site-header">
+    <article class="header-inner">
+      <!-- Logo Thương Hiệu Cá Nhân -->
+      <a href="#top" class="site-logo" aria-label="Về đầu trang cá nhân Quỳnh Như">
+        <span class="logo-badge" aria-hidden="true">🌸</span>
+        <span class="logo-text-wrap">
+          <span class="logo-name">Quỳnh Như</span>
+          <span class="logo-sub">125000162 • LHU</span>
+        </span>
+      </a>
+
+      <!-- Pure CSS Hamburger Checkbox Hack -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Mở đóng thanh điều hướng">
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Bật tắt menu">
+        <span class="hamburger-line" aria-hidden="true"></span>
+      </label>
+
+      <!-- Menu Điều Hướng Chính -->
+      <nav class="site-nav" aria-label="Điều hướng chính trang web">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Trang Chủ</a></li>
+          <li><a href="#about" class="nav-link">Giới Thiệu</a></li>
+          <li><a href="#skills" class="nav-link">Kỹ Năng</a></li>
+          <li><a href="#projects" class="nav-link">Dự Án</a></li>
+          <li><a href="#journey" class="nav-link">Hành Trình</a></li>
+          <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Gửi Tin Nhắn 💌</a>
+      </nav>
+    </article>
+  </header>
+
+  <!-- =========================================================================
+       MAIN: 6 MỤC ĐỒNG NHẤT KHUNG (MAX 1160PX, CÙNG KHOẢNG CÁCH, KHÔNG <div>)
+       ========================================================================= -->
+  <main class="site-main">
+
+    <!-- -----------------------------------------------------------------------
+         MỤC 1: TRANG CHỦ (HERO SECTION)
+         ----------------------------------------------------------------------- -->
+    <section id="hero" class="site-section hero-section" aria-labelledby="hero-heading">
+      <article class="section-container">
+        <article class="hero-grid">
+
+          <!-- Nội Dung Giới Thiệu Hero -->
+          <article class="hero-content">
+            <!-- Nhãn Nổi Bật -->
+            <p class="badge-row" aria-label="Thông tin nhanh">
+              <span class="badge badge-accent">MSSV: 125000162</span>
+              <span class="badge badge-school">Đại học Lạc Hồng</span>
+              <span class="badge badge-field">Định hướng Frontend</span>
+            </p>
+
+            <!-- Tiêu Đề Họ Tên Sử Dụng Animate.css -->
+            <h1 id="hero-heading" class="hero-title animate__animated animate__fadeInDown">
+              Trần Thị Quỳnh Như
+            </h1>
+
+            <!-- Hiệu Ứng Gõ Chữ Thuần CSS -->
+            <p class="hero-tagline" aria-label="Vai trò: Sinh viên CNTT • Frontend Developer">
+              <span class="typewriter-box">
+                <span class="typewriter-text">Sinh viên CNTT • Frontend Developer</span>
+              </span>
+            </p>
+
+            <!-- Mô Tả Thật Ngắn Gọn -->
+            <p class="hero-desc">
+              Xin chào thầy cô và các bạn! Mình là sinh viên Khoa Công nghệ Thông tin tại Trường Đại học Lạc Hồng ở TP. Biên Hòa, Tỉnh Đồng Nai. Mình đang theo đuổi học tập lập trình định hướng Frontend, thích xây dựng giao diện web chuẩn Semantic HTML5, CSS Variables pastel và đang tích cực rèn luyện thêm tiếng Anh, tiếng Nhật.
+            </p>
+
+            <!-- Thẻ Thông Tin Nhanh - Dùng <dl> Thuần HTML5 -->
+            <dl class="hero-details-card">
+              <dt>MSSV:</dt>
+              <dd>125000162</dd>
+              <dt>Khoa &amp; Trường:</dt>
+              <dd>Khoa CNTT - ĐH Lạc Hồng</dd>
+              <dt>Nơi Ở:</dt>
+              <dd>Biên Hòa, Đồng Nai</dd>
+              <dt>Ngoại Ngữ:</dt>
+              <dd>Tiếng Anh &amp; Tiếng Nhật</dd>
+            </dl>
+
+            <!-- Nút Hành Động - Dùng <p class="hero-actions"> Không Dùng <nav> -->
+            <p class="hero-actions">
+              <a href="#projects" class="btn btn-primary animate__animated animate__pulse animate__infinite animate__slower">
+                Khám Phá Dự Án 🚀
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Liên Hệ Hợp Tác ✉️
+              </a>
+              <a href="https://github.com/QuynhNhu27" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="Xem GitHub QuynhNhu27">
+                GitHub @QuynhNhu27 ↗
+              </a>
+            </p>
+          </article>
+
+          <!-- Khung Ảnh Chân Dung Sinh Viên -->
+          <figure class="hero-visual">
+            <figure class="hero-visual-frame">
+              <img src="assets/avatar.jpg" alt="Ảnh chân dung sinh viên Trần Thị Quỳnh Như - MSSV 125000162" class="hero-avatar" width="370" height="370">
+            </figure>
+            <figcaption class="float-badge float-badge-1">
+              <span aria-hidden="true">💻</span> IT Girl @ LHU
+            </figcaption>
+            <figcaption class="float-badge float-badge-2">
+              <span aria-hidden="true">🌸</span> Pastel Frontend
+            </figcaption>
+          </figure>
+
+        </article>
+      </article>
+    </section>
+
+    <!-- Đường Phân Cách Giữa Mục 1 và Mục 2 -->
+    <hr class="section-divider" aria-hidden="true">
+
+    <!-- -----------------------------------------------------------------------
+         MỤC 2: GIỚI THIỆU (ABOUT ME & SỐ LIỆU ĐẾM THẬT)
+         ----------------------------------------------------------------------- -->
+    <section id="about" class="site-section about-section" aria-labelledby="about-heading">
+      <article class="section-container">
+        <!-- Đầu Mục Đồng Nhất -->
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">🌸 Giới Thiệu</span>
+          <h2 id="about-heading" class="section-title">Về Bản Thân Quỳnh Như</h2>
+          <p class="section-desc">Thông tin học tập và mục tiêu phát triển của sinh viên CNTT tại Trường Đại học Lạc Hồng.</p>
+        </header>
+
+        <!-- Lưới Nội Dung Giới Thiệu -->
+        <article class="about-grid">
+          <!-- Bài Viết Giới Thiệu Bản Thân -->
+          <article class="about-card" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="about-greeting">Xin chào! Mình là Quỳnh Như 🌷</h3>
+            <p class="about-text">
+              Mình là sinh viên Khoa Công nghệ Thông tin tại <strong>Trường Đại học Lạc Hồng (LHU)</strong>, Mã số sinh viên: <strong>125000162</strong>, hiện đang sinh sống và học tập tại <strong>TP. Biên Hòa, Tỉnh Đồng Nai</strong>.
+            </p>
+            <p class="about-text">
+              Trong quá trình học tập tại trường, mình định hình niềm đam mê với mảng <strong>Lập trình Frontend</strong>. Mình luôn chú trọng rèn luyện kỹ năng viết mã nguồn mạch lạc, chuẩn cấu trúc Semantic HTML5, ứng dụng hệ màu pastel hài hòa và tối ưu hiển thị responsive đa màn hình.
+            </p>
+            <p class="about-text">
+              Song song với việc học code, mình đang chủ động rèn luyện hai ngoại ngữ là <strong>Tiếng Anh</strong> và <strong>Tiếng Nhật</strong> để mở rộng vốn hiểu biết và đọc hiểu các tài liệu kỹ thuật quốc tế.
+            </p>
+            <blockquote class="about-quote">
+              "Kiên trì tích lũy từng dòng mã sạch, rèn luyện ngoại ngữ mỗi ngày để từng bước trở thành một lập trình viên Frontend tận tâm."
+            </blockquote>
+          </article>
+
+          <!-- Thống Kê Số Liệu Thật (3 Thẻ Đều Nhau Bằng CSS Counter) -->
+          <article class="stats-grid">
+            <!-- Thẻ 1 -->
+            <article class="stat-card" data-aos="fade-up" data-aos-delay="0">
+              <span class="stat-icon" aria-hidden="true">📦</span>
+              <p class="stat-info">
+                <span class="stat-number stat-projects" aria-label="3">3</span>
+                <span class="stat-label">Dự Án Trên GitHub</span>
+              </p>
+            </article>
+
+            <!-- Thẻ 2 -->
+            <article class="stat-card" data-aos="fade-up" data-aos-delay="100">
+              <span class="stat-icon" aria-hidden="true">🌐</span>
+              <p class="stat-info">
+                <span class="stat-number stat-languages" aria-label="2">2</span>
+                <span class="stat-label">Ngoại Ngữ Đang Học (Anh - Nhật)</span>
+              </p>
+            </article>
+
+            <!-- Thẻ 3 -->
+            <article class="stat-card" data-aos="fade-up" data-aos-delay="200">
+              <span class="stat-icon" aria-hidden="true">⚡</span>
+              <p class="stat-info">
+                <span class="stat-number stat-libs" aria-label="2">2</span>
+                <span class="stat-label">Thư Viện Hỗ Trợ (Animate &amp; AOS)</span>
+              </p>
+            </article>
+          </article>
+        </article>
+      </article>
+    </section>
+
+    <!-- Đường Phân Cách Giữa Mục 2 và Mục 3 -->
+    <hr class="section-divider" aria-hidden="true">
+
+    <!-- -----------------------------------------------------------------------
+         MỤC 3: KỸ NĂNG (ĐÚNG 6 THẺ: 3 CỘT X 2 HÀNG, KHÔNG THẺ LẺ, THẺ CHIP)
+         ----------------------------------------------------------------------- -->
+    <section id="skills" class="site-section skills-section" aria-labelledby="skills-heading">
+      <article class="section-container">
+        <!-- Đầu Mục Đồng Nhất -->
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">⚡ Năng Lực</span>
+          <h2 id="skills-heading" class="section-title">Kỹ Năng Đang Rèn Luyện</h2>
+          <p class="section-desc">Kiến thức chuyên môn và công cụ hỗ trợ được học tập, phát triển trong chương trình CNTT tại LHU.</p>
+        </header>
+
+        <!-- Lưới 6 Thẻ Đồng Đều: 3 Cột x 2 Hàng Trên Desktop, 2 Cột Tablet, 1 Cột Mobile -->
+        <ul class="skills-grid">
+
+          <!-- Thẻ 1: HTML5 (Cột 1, Hàng 1) -->
+          <li class="skill-card" data-aos="fade-up" data-aos-delay="0">
+            <header class="skill-card-header">
+              <span class="skill-icon" aria-hidden="true">🏷️</span>
+              <h3 class="skill-card-title">HTML5 Semantic</h3>
+            </header>
+            <p class="skill-card-desc">
+              Xây dựng cấu trúc tài liệu mạch lạc với các thẻ ngữ nghĩa chuẩn W3C, hỗ trợ SEO và tối ưu trải nghiệm tiếp cận cho người dùng.
+            </p>
+            <ul class="chip-list" aria-label="Từ khóa kỹ năng HTML5">
+              <li class="chip-tag">Semantic Tags</li>
+              <li class="chip-tag">Chuẩn W3C</li>
+              <li class="chip-tag">Accessibility</li>
+              <li class="chip-tag">Form Validation</li>
+            </ul>
+          </li>
+
+          <!-- Thẻ 2: CSS3 (Cột 2, Hàng 1) -->
+          <li class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <header class="skill-card-header">
+              <span class="skill-icon" aria-hidden="true">🎨</span>
+              <h3 class="skill-card-title">CSS3 &amp; Layout</h3>
+            </header>
+            <p class="skill-card-desc">
+              Tổ chức Design System bằng CSS Variables trong :root, dàn trang linh hoạt với Flexbox, CSS Grid và responsive đa kích thước màn hình.
+            </p>
+            <ul class="chip-list" aria-label="Từ khóa kỹ năng CSS3">
+              <li class="chip-tag">CSS Variables</li>
+              <li class="chip-tag">Flexbox</li>
+              <li class="chip-tag">CSS Grid</li>
+              <li class="chip-tag">Responsive</li>
+            </ul>
+          </li>
+
+          <!-- Thẻ 3: JavaScript Cơ Bản (Cột 3, Hàng 1) -->
+          <li class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <header class="skill-card-header">
+              <span class="skill-icon" aria-hidden="true">💻</span>
+              <h3 class="skill-card-title">JavaScript Cơ Bản</h3>
+            </header>
+            <p class="skill-card-desc">
+              Làm quen cú pháp cơ bản của JavaScript, tìm hiểu cách tương tác với cây DOM, bắt sự kiện người dùng và rèn luyện tư duy logic thuật toán.
+            </p>
+            <ul class="chip-list" aria-label="Từ khóa kỹ năng JavaScript">
+              <li class="chip-tag">Cú pháp cơ bản</li>
+              <li class="chip-tag">DOM Nodes</li>
+              <li class="chip-tag">Event Handling</li>
+              <li class="chip-tag">Logic giải thuật</li>
+            </ul>
+          </li>
+
+          <!-- Thẻ 4: Git & GitHub (Cột 1, Hàng 2) -->
+          <li class="skill-card" data-aos="fade-up" data-aos-delay="0">
+            <header class="skill-card-header">
+              <span class="skill-icon" aria-hidden="true">🐙</span>
+              <h3 class="skill-card-title">Git &amp; GitHub</h3>
+            </header>
+            <p class="skill-card-desc">
+              Sử dụng Git để quản lý các mốc phiên bản mã nguồn, đồng bộ hóa kho lưu trữ GitHub QuynhNhu27 và phát hành trang qua GitHub Pages.
+            </p>
+            <ul class="chip-list" aria-label="Từ khóa kỹ năng Git">
+              <li class="chip-tag">Git Commit / Push</li>
+              <li class="chip-tag">GitHub Repos</li>
+              <li class="chip-tag">GitHub Pages</li>
+              <li class="chip-tag">Version Control</li>
+            </ul>
+          </li>
+
+          <!-- Thẻ 5: Thiết Kế Giao Diện (Cột 2, Hàng 2) -->
+          <li class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <header class="skill-card-header">
+              <span class="skill-icon" aria-hidden="true">✨</span>
+              <h3 class="skill-card-title">Thiết Kế Giao Diện</h3>
+            </header>
+            <p class="skill-card-desc">
+              Tư duy phối màu sắc pastel ngọt ngào, tạo khoảng cách bo góc mềm mại, phân cấp thị giác rõ ràng và sử dụng phần mềm hỗ trợ thiết kế.
+            </p>
+            <ul class="chip-list" aria-label="Từ khóa kỹ năng thiết kế">
+              <li class="chip-tag">Màu Pastel</li>
+              <li class="chip-tag">Bo góc mềm</li>
+              <li class="chip-tag">Khoảng cách Spacing</li>
+              <li class="chip-tag">Figma cơ bản</li>
+            </ul>
+          </li>
+
+          <!-- Thẻ 6: Ngoại Ngữ Đang Học (Cột 3, Hàng 2) -->
+          <li class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <header class="skill-card-header">
+              <span class="skill-icon" aria-hidden="true">📚</span>
+              <h3 class="skill-card-title">Ngoại Ngữ Đang Học</h3>
+            </header>
+            <p class="skill-card-desc">
+              Chủ động trau dồi hai ngôn ngữ Tiếng Anh và Tiếng Nhật để đọc hiểu tài liệu chuyên ngành CNTT và giao tiếp học tập tự tin hơn.
+            </p>
+            <ul class="chip-list" aria-label="Từ khóa ngoại ngữ">
+              <li class="chip-tag">Tiếng Anh đọc hiểu</li>
+              <li class="chip-tag">Tiếng Nhật cơ bản</li>
+              <li class="chip-tag">Thuật ngữ CNTT</li>
+              <li class="chip-tag">Tự học mỗi ngày</li>
+            </ul>
+          </li>
+
+        </ul>
+      </article>
+    </section>
+
+    <!-- Đường Phân Cách Giữa Mục 3 và Mục 4 -->
+    <hr class="section-divider" aria-hidden="true">
+
+    <!-- -----------------------------------------------------------------------
+         MỤC 4: DỰ ÁN (ĐÚNG 3 THẺ: 3 CỘT, KHÔNG THẺ LẺ, THÔNG TIN THẬT)
+         ----------------------------------------------------------------------- -->
+    <section id="projects" class="site-section projects-section" aria-labelledby="projects-heading">
+      <article class="section-container">
+        <!-- Đầu Mục Đồng Nhất -->
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">💼 Dự Án</span>
+          <h2 id="projects-heading" class="section-title">Dự Án Trên GitHub</h2>
+          <p class="section-desc">Các kho lưu trữ mã nguồn học tập thực tế trên tài khoản GitHub cá nhân QuynhNhu27.</p>
+        </header>
+
+        <!-- Lưới 3 Thẻ Đồng Đều: 3 Cột Trên Desktop, 2 Cột Tablet, 1 Cột Mobile -->
+        <article class="projects-grid">
+
+          <!-- Dự Án 1: Portfolio Cá Nhân -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="0">
+            <figure class="project-visual">
+              <img src="assets/project-portfolio.svg" alt="Giao diện Portfolio cá nhân của Trần Thị Quỳnh Như" class="project-img" loading="lazy">
+              <figcaption class="project-badge-top">Kiểm Tra Giữa Kỳ</figcaption>
+            </figure>
+            <article class="project-body">
+              <h3 class="project-title">Portfolio Cá Nhân</h3>
+              <p class="project-desc">
+                Website hồ sơ cá nhân phục vụ bài kiểm tra giữa kỳ môn Thiết kế Web tại Trường Đại học Lạc Hồng, triển khai qua GitHub Pages.
+              </p>
+              <ul class="project-tags" aria-label="Công nghệ dự án 1">
+                <li class="project-tag">Semantic HTML5</li>
+                <li class="project-tag">CSS Variables</li>
+                <li class="project-tag">Animate.css &amp; AOS</li>
+              </ul>
+              <footer class="project-footer">
+                <a href="https://github.com/QuynhNhu27/Nhu_TranThiQuynh_125000162" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  Xem Repo GitHub ↗
+                </a>
+              </footer>
+            </article>
+          </article>
+
+          <!-- Dự Án 2: TKWeb -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <figure class="project-visual">
+              <img src="assets/project-tkweb.svg" alt="Kho lưu trữ dự án TKWeb trên GitHub" class="project-img" loading="lazy">
+              <figcaption class="project-badge-top">Thực Hành LHU</figcaption>
+            </figure>
+            <article class="project-body">
+              <h3 class="project-title">Dự Án TKWeb</h3>
+              <p class="project-desc">
+                Kho lưu trữ bài tập và các bài thực hành giao diện môn Thiết kế Web tại Khoa Công nghệ Thông tin Trường Đại học Lạc Hồng.
+              </p>
+              <ul class="project-tags" aria-label="Công nghệ dự án 2">
+                <li class="project-tag">HTML5</li>
+                <li class="project-tag">CSS3</li>
+                <li class="project-tag">Bài tập thực hành</li>
+              </ul>
+              <footer class="project-footer">
+                <a href="https://github.com/QuynhNhu27/TKWeb" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  Xem Repo GitHub ↗
+                </a>
+              </footer>
+            </article>
+          </article>
+
+          <!-- Dự Án 3: GioiThieuu -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <figure class="project-visual">
+              <img src="assets/project-gioithieu.svg" alt="Kho lưu trữ dự án GioiThieuu trên GitHub" class="project-img" loading="lazy">
+              <figcaption class="project-badge-top">Bài Tập Mở Đầu</figcaption>
+            </figure>
+            <article class="project-body">
+              <h3 class="project-title">Dự Án GioiThieuu</h3>
+              <p class="project-desc">
+                Kho lưu trữ trang web giới thiệu cá nhân và thực hành cấu trúc web cơ bản được lưu trữ công khai trên tài khoản GitHub QuynhNhu27.
+              </p>
+              <ul class="project-tags" aria-label="Công nghệ dự án 3">
+                <li class="project-tag">Cấu trúc Web</li>
+                <li class="project-tag">Trang giới thiệu</li>
+                <li class="project-tag">Mã nguồn GitHub</li>
+              </ul>
+              <footer class="project-footer">
+                <a href="https://github.com/QuynhNhu27/GioiThieuu" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  Xem Repo GitHub ↗
+                </a>
+              </footer>
+            </article>
+          </article>
+
+        </article>
+      </article>
+    </section>
+
+    <!-- Đường Phân Cách Giữa Mục 4 và Mục 5 -->
+    <hr class="section-divider" aria-hidden="true">
+
+    <!-- -----------------------------------------------------------------------
+         MỤC 5: HÀNH TRÌNH (KHÔNG NGÀY THÁNG, MỐC HỌC TẬP THẬT)
+         ----------------------------------------------------------------------- -->
+    <section id="journey" class="site-section journey-section" aria-labelledby="journey-heading">
+      <article class="section-container">
+        <!-- Đầu Mục Đồng Nhất -->
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">🌱 Hành Trình</span>
+          <h2 id="journey-heading" class="section-title">Quá Trình Học Tập</h2>
+          <p class="section-desc">Những cột mốc thực tế trong quá trình học tập ngành Công nghệ Thông tin tại Đại học Lạc Hồng.</p>
+        </header>
+
+        <!-- Danh Sách Các Mốc Học Tập Thực Tế (Không Bịa Ngày Tháng) -->
+        <ol class="timeline">
+          <!-- Mốc 1 -->
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <h3 class="timeline-role">Gia Nhập Khoa CNTT - Trường Đại Học Lạc Hồng</h3>
+              <p class="timeline-org">Đại học Lạc Hồng (LHU) • MSSV: 125000162</p>
+              <p class="timeline-desc">
+                Trở thành sinh viên Khoa Công nghệ Thông tin tại Trường Đại học Lạc Hồng. Làm quen với môi trường đại học, học tập các môn học đại cương và kiến thức nền tảng của ngành CNTT.
+              </p>
+            </article>
+          </li>
+
+          <!-- Mốc 2 -->
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <h3 class="timeline-role">Xác Định Định Hướng Lập Trình Frontend</h3>
+              <p class="timeline-org">Học phần Thiết kế Web • Khoa CNTT</p>
+              <p class="timeline-desc">
+                Bắt đầu học sâu về cấu trúc Semantic HTML5, hệ thống định dạng CSS3 và nguyên lý bố cục giao diện responsive thân thiện với người dùng.
+              </p>
+            </article>
+          </li>
+
+          <!-- Mốc 3 -->
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <h3 class="timeline-role">Rèn Luyện Ngoại Ngữ &amp; Quản Lý Mã Nguồn</h3>
+              <p class="timeline-org">Kỹ năng tự học &amp; Thực hành dự án</p>
+              <p class="timeline-desc">
+                Chủ động học tập hai ngoại ngữ Tiếng Anh và Tiếng Nhật, đồng thời sử dụng công cụ Git và GitHub để lưu trữ, quản lý các bài tập thực hành môn học.
+              </p>
+            </article>
+          </li>
+
+          <!-- Mốc 4 -->
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <h3 class="timeline-role">Hoàn Thành Bài Kiểm Tra Giữa Kỳ Môn Thiết Kế Web</h3>
+              <p class="timeline-org">Thi Mở • Triển khai trực tiếp qua GitHub Pages</p>
+              <p class="timeline-desc">
+                Xây dựng hoàn chỉnh website Portfolio cá nhân chuẩn Semantic HTML5, bảng màu pastel nữ tính, tối ưu trải nghiệm và xuất bản qua GitHub Pages theo đúng yêu cầu đề bài.
+              </p>
+            </article>
+          </li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- Đường Phân Cách Giữa Mục 5 và Mục 6 -->
+    <hr class="section-divider" aria-hidden="true">
+
+    <!-- -----------------------------------------------------------------------
+         MỤC 6: LIÊN HỆ (THÔNG TIN THẬT & FORM VALIDATION THUẦN CSS)
+         ----------------------------------------------------------------------- -->
+    <section id="contact" class="site-section contact-section" aria-labelledby="contact-heading">
+      <article class="section-container">
+        <!-- Đầu Mục Đồng Nhất -->
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">💌 Liên Hệ</span>
+          <h2 id="contact-heading" class="section-title">Thông Tin Kết Nối</h2>
+          <p class="section-desc">Kênh trao đổi và liên hệ chính thức của sinh viên Trần Thị Quỳnh Như.</p>
+        </header>
+
+        <!-- Lưới Liên Hệ: Thông Tin Thật & Form -->
+        <article class="contact-grid">
+          <!-- Thông Tin Liên Hệ Thật (Không Bịa Số Điện Thoại) -->
+          <article class="contact-info-card" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="contact-info-title">Thông Tin Cá Nhân 🌸</h3>
+            <p class="contact-info-desc">
+              Sinh viên Khoa CNTT - Trường Đại học Lạc Hồng. Rất hoan nghênh thầy cô và bạn bè liên hệ trao đổi về học tập và lập trình web.
+            </p>
+
+            <dl class="contact-list">
+              <article class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">🏫</span>
+                <dt class="contact-label">Trường Đại Học:</dt>
+                <dd class="contact-value">Khoa CNTT - Trường Đại học Lạc Hồng</dd>
+              </article>
+
+              <article class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">📍</span>
+                <dt class="contact-label">Địa Chỉ:</dt>
+                <dd class="contact-value">TP. Biên Hòa, Tỉnh Đồng Nai</dd>
+              </article>
+
+              <article class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">📧</span>
+                <dt class="contact-label">Email Sinh Viên:</dt>
+                <dd class="contact-value"><a href="mailto:125000162@lachong.edu.vn">125000162@lachong.edu.vn</a></dd>
+              </article>
+
+              <article class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">🐙</span>
+                <dt class="contact-label">GitHub Profile:</dt>
+                <dd class="contact-value"><a href="https://github.com/QuynhNhu27" target="_blank" rel="noopener noreferrer">github.com/QuynhNhu27</a></dd>
+              </article>
+            </dl>
+
+            <footer class="contact-socials">
+              <h4 class="social-title">Mạng Xã Hội &amp; Nền Tảng</h4>
+              <p>
+                <a href="https://github.com/QuynhNhu27" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub QuynhNhu27">
+                  <span>🐙</span> GitHub QuynhNhu27
+                </a>
+              </p>
+            </footer>
+          </article>
+
+          <!-- Form Liên Hệ Với Kiểm Tra Tính Hợp Lệ Thuần HTML5 / CSS (Không Dùng <div>) -->
+          <article class="contact-form-card" data-aos="fade-up" data-aos-delay="100">
+            <form class="contact-form" action="#" method="POST">
+              <fieldset class="form-fieldset">
+                <legend class="section-subtitle" style="margin-bottom: 16px;">Gửi Lời Nhắn</legend>
+
+                <!-- Họ và tên -->
+                <p class="form-group">
+                  <label for="user-name" class="form-label">
+                    Họ và tên của bạn <span class="form-required">*</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="user-name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="Ví dụ: Nguyễn Văn A" 
+                    required 
+                    minlength="2" 
+                    maxlength="50"
+                    autocomplete="name"
+                  >
+                  <span class="form-hint" role="alert">Vui lòng nhập họ và tên (tối thiểu 2 ký tự).</span>
+                </p>
+
+                <!-- Email -->
+                <p class="form-group">
+                  <label for="user-email" class="form-label">
+                    Địa chỉ Email liên hệ <span class="form-required">*</span>
+                  </label>
+                  <input 
+                    type="email" 
+                    id="user-email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="name@domain.com" 
+                    required 
+                    autocomplete="email"
+                  >
+                  <span class="form-hint" role="alert">Email phải có định dạng hợp lệ (ví dụ: ten@domain.com).</span>
+                </p>
+
+                <!-- Chủ đề -->
+                <p class="form-group">
+                  <label for="user-subject" class="form-label">
+                    Chủ đề trao đổi <span class="form-required">*</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="user-subject" 
+                    name="subject" 
+                    class="form-input" 
+                    placeholder="Ví dụ: Góp ý bài kiểm tra / Thảo luận bài tập" 
+                    required 
+                    minlength="4"
+                  >
+                  <span class="form-hint" role="alert">Vui lòng nhập chủ đề rõ ràng (tối thiểu 4 ký tự).</span>
+                </p>
+
+                <!-- Tin nhắn -->
+                <p class="form-group">
+                  <label for="user-message" class="form-label">
+                    Nội dung tin nhắn <span class="form-required">*</span>
+                  </label>
+                  <textarea 
+                    id="user-message" 
+                    name="message" 
+                    class="form-textarea" 
+                    rows="4" 
+                    placeholder="Viết đôi lời nhắn gửi tới Quỳnh Như nhé..." 
+                    required 
+                    minlength="10"
+                  ></textarea>
+                  <span class="form-hint" role="alert">Nội dung tin nhắn cần tối thiểu 10 ký tự.</span>
+                </p>
+
+                <!-- Nút Gửi Form -->
+                <button type="submit" class="btn btn-primary btn-submit">
+                  Gửi Tin Nhắn 💌
+                </button>
+              </fieldset>
+            </form>
+          </article>
+        </article>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER: CHÂN TRANG ĐỒNG NHẤT KHUNG (MAX 1160PX, KHÔNG <div>)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <article class="section-container">
+      <article class="footer-grid">
+        <!-- Cột 1: Thông tin sinh viên & Trường -->
+        <article class="footer-col">
+          <h3 class="footer-brand-title">🌸 Trần Thị Quỳnh Như</h3>
+          <p class="footer-brand-desc">
+            Sinh viên Khoa Công nghệ Thông tin - Trường Đại học Lạc Hồng.<br>
+            Mã số sinh viên: <strong>125000162</strong>.<br>
+            Bài kiểm tra giữa kỳ môn Thiết kế Web - Nộp bài qua GitHub Pages.
+          </p>
+        </article>
+
+        <!-- Cột 2: Điều hướng nhanh -->
+        <article class="footer-col">
+          <h4 class="footer-col-title">Điều Hướng Nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Trang Chủ</a></li>
+            <li><a href="#about" class="footer-link">Giới Thiệu</a></li>
+            <li><a href="#skills" class="footer-link">Kỹ Năng</a></li>
+            <li><a href="#projects" class="footer-link">Dự Án</a></li>
+            <li><a href="#journey" class="footer-link">Hành Trình</a></li>
+            <li><a href="#contact" class="footer-link">Liên Hệ</a></li>
+          </ul>
+        </article>
+
+        <!-- Cột 3: Dự án GitHub QuynhNhu27 -->
+        <article class="footer-col">
+          <h4 class="footer-col-title">Dự Án GitHub</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/QuynhNhu27/Nhu_TranThiQuynh_125000162" target="_blank" rel="noopener noreferrer" class="footer-link">Nhu_TranThiQuynh_125000162</a></li>
+            <li><a href="https://github.com/QuynhNhu27/TKWeb" target="_blank" rel="noopener noreferrer" class="footer-link">TKWeb</a></li>
+            <li><a href="https://github.com/QuynhNhu27/GioiThieuu" target="_blank" rel="noopener noreferrer" class="footer-link">GioiThieuu</a></li>
+            <li><a href="https://github.com/QuynhNhu27" target="_blank" rel="noopener noreferrer" class="footer-link">Tài Khoản @QuynhNhu27</a></li>
+          </ul>
+        </article>
+      </article>
+
+      <!-- Bản Quyền Cuối Trang -->
+      <article class="footer-bottom">
+        <p class="copyright">
+          &copy; 2026 Trần Thị Quỳnh Như - MSSV: 125000162 - Khoa CNTT Trường Đại học Lạc Hồng. Môn Thiết kế Web.
+        </p>
+      </article>
+    </article>
+  </footer>
+
+  <!-- =========================================================================
+       NÚT VỀ ĐẦU TRANG (BACK TO TOP THUẦN HTML/CSS)
+       ========================================================================= -->
+  <a href="#top" class="back-to-top" aria-label="Cuộn lên đầu trang" title="Về đầu trang">
+    ↑
+  </a>
+
+  <!-- =========================================================================
+       SCRIPTS: THƯ VIỆN AOS & ĐÚNG DUY NHẤT MỘT DÒNG AOS.init()
+       ========================================================================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 100 });</script>
+
+</body>
+</html>
