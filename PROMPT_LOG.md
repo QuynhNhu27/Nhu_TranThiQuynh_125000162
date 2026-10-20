@@ -109,3 +109,48 @@ Nhu_TranThiQuynh_125000162/
 
 ---
 *Báo cáo được hoàn thiện và xác thực 100% bởi sinh viên Trần Thị Quỳnh Như - MSSV 125000162.*
+
+---
+## 5. ĐỐI CHIẾU QUÁ TRÌNH PROMPT ENGINEERING VỚI ĐỀ THI
+
+**Lưu ý về tính xác thực:** Phần báo cáo kỹ thuật ở trên phản ánh cấu trúc sản phẩm; chưa phải bản chép nguyên văn đầy đủ lịch sử trò chuyện với AI. Không tự tạo Prompt giả để thay thế lịch sử thực tế.
+
+### 5.1. Prompt khởi tạo
+
+**Mục đích:** Yêu cầu AI hỗ trợ xây dựng Portfolio cá nhân cho sinh viên với các phần Trang chủ, Giới thiệu, Kỹ năng, Dự án, Hành trình, Liên hệ.
+
+**Prompt nguyên văn đã gửi:** *Cần đối chiếu và điền lại từ lịch sử sử dụng Google Antigravity; hiện chưa có dữ liệu để chép nguyên văn.*
+
+**Kết quả quan sát:** Website gồm 6 section, có ảnh chân dung, hình minh họa dự án và thanh điều hướng.
+
+### 5.2. Iteration 1 — Semantic HTML5 và CSS
+
+**Yêu cầu tinh chỉnh:** Sử dụng `header`, `nav`, `main`, `section`, `article`, `footer`; hạn chế phần tử không mang ngữ nghĩa; tạo hệ thống biến màu trong `:root`, dùng Grid/Flexbox và media queries.
+
+**Prompt nguyên văn:** *Cần bổ sung từ lịch sử AI.*
+
+**Kết quả kiểm tra mã nguồn:** HTML có đủ các thẻ ngữ nghĩa chính; CSS dùng biến `var(...)` và có điều kiện `@media` để hỗ trợ màn hình nhỏ.
+
+### 5.3. Iteration 2 — Hiệu ứng Animate.css và cuộn trang
+
+**Yêu cầu tinh chỉnh:** Tạo hiệu ứng xuất hiện nhẹ nhàng, hover/focus rõ ràng nhưng không ảnh hưởng khả năng đọc nội dung.
+
+**Prompt nguyên văn:** *Cần bổ sung từ lịch sử AI.*
+
+**Vấn đề kỹ thuật đã phát hiện:** AOS chính thức cần thư viện JavaScript để khởi tạo, trái với yêu cầu bổ sung của giảng viên là không sử dụng JavaScript.
+
+**Cách xử lý đã triển khai:** Giữ Animate.css và các hiệu ứng hover/focus hiện có; xóa thẻ `script` và chuyển hiệu ứng xuất hiện khi cuộn sang CSS `animation-timeline: view()` trên trình duyệt có hỗ trợ. Trình duyệt không hỗ trợ vẫn hiển thị đầy đủ nội dung. Giải pháp này **không phải AOS chính thức**, dù có thể tạo hiệu ứng tương tự.
+
+### 5.4. Debug — Ảnh chân dung trên GitHub Pages
+
+**Lỗi:** Ảnh không tải do đường dẫn không khớp vị trí file trên repository.
+
+**Cách khắc phục:** Nhúng ảnh JPEG trực tiếp trong HTML và kiểm tra giao diện từ link GitHub Pages.
+
+**Kết quả:** Ảnh chân dung hiển thị trên phiên bản triển khai.
+
+### 5.5. Đánh giá cá nhân
+
+- **AI giúp tiết kiệm thời gian nhất ở đâu?** AI hỗ trợ dựng cấu trúc HTML, hệ thống CSS và đề xuất cách xử lý responsive để mình tập trung hơn vào việc xem và chỉnh giao diện.
+- **Bài học khi đặt Prompt:** Cần ghi rõ công nghệ được phép sử dụng, thẻ ngữ nghĩa bắt buộc, yêu cầu về hiệu ứng và khả năng hiển thị trên di động. Không nên nhận ngay code AI trả về mà cần thử trực tiếp trên trình duyệt và đối chiếu từng tiêu chí.
+- **Giới hạn của bản nhật ký:** Những Prompt chưa lưu nguyên văn ở trên phải được đối chiếu với lịch sử thật, không nên xem phần mô tả mục tiêu là bằng chứng về câu lệnh đã gửi.
